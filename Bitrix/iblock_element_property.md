@@ -28,3 +28,8 @@ if ($arResProp = $objProp->Fetch()) {
 	p($arResProp['ID']);
 }
 ```
+
+##	Изменить значение свойства элемента
+```php
+$res = \CIBlockElement::SetPropertyValueEx($elementID, $iBlockID, ['STATUS_USER' => $arResult['STATUS']]);
+```
